@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+}
+nav .onglets{
+    margin-left: 300px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../Images/animalerie.jpg');
+    background-size: cover;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    border-bottom: 1px solid #6f6f6f;
+}
+header button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .contenu{
+    margin: auto;
+}
+.main .contenu .carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main .contenu .carte .droite img{
+    height: 300px;
+    width: 400px;
+}
+.main .contenu .carte .gauche{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: darkblue;
+    color: #ffffff;
+}
+.main .contenu .carte.droite{
+    flex: 0 0 70%;
+}
+footer{
+    margin-top: 20px;
+    border-top: 5px solid #6f6f6f;
+    background-color: darkblue;
+    color: #ffffff;
+    padding: 30px 50px;
+}
+footer .infos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+footer .infos .info{
+    flex: 0 0 45%;
+    padding: 10px;
+}
+footer .infos .info li a{
+    color: #ffffff;
+}
+footer .infos .info h3{
+    font-family: 'Playfair Display', sans-serif;
+    border-bottom: 3px solid white;
+    width: 40%;
+    padding-bottom: 5px;
+}
+footer .infos .info li{
+    list-style-type: none;
+}
+
+@media (max-width:680px) {
+    nav .onglets{
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    header h4{
+        margin-top: -10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    header button{
+        font-size: 10px;
+    }
+    .main .contenu .carte{
+        display: block;
+    }
+    .main .contenu .carte .droite img{
+        height: 250px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    footer .infos{
+        margin: 0px;
+    }
+    footer .infos .info{
+        flex: 0 0 90%;
+        padding: 0px;
+    }
+
+    footer .infos .info h3{
+        margin-left: 0px;
+        width: 70%;
+        font-size: small;
+    }
+    footer .infos .info li{
+        width: 95%;
+        font-size: smaller;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+
+
